@@ -1,2 +1,3 @@
 Das ist die zweite Datei
 Ich verändere etwas
+Diese zeile habe ich in GitHub hinzugefügt
