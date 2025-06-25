@@ -5,7 +5,7 @@ git config --global user.email "lukas.fischer@jklf.de"
 git init | erstellt ein neues lokales Repo
 git remote add origin <https://github.com/Repo...> | wenn das Repo auf GitHub erstellt wurde (leer) für ds lokale Repo
 git remote -v | etwas output, ob es geklappt hat
-it push --set-upstream origin master | wenn man ein neues Lokales Repo ins GitHub pushen will
+git push --set-upstream origin master | wenn man ein neues Lokales Repo ins GitHub pushen will
 
 git add <file> | Fügt eine Datei git hinzu... sichert sie aber nicht im Repo nur im Local-Repo
 git commit -m "Nachricht hier eintragen" | Snapshot vom Projekt Lokal Repo
