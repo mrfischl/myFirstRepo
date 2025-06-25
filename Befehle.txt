@@ -2,6 +2,11 @@ git config --global core.editor "/usr/bin/nano"
 git config --global user.name "Lukas"
 git config --global user.email "lukas.fischer@jklf.de"
 
+git init | erstellt ein neues lokales Repo
+git remote add origin <https://github.com/Repo...> | wenn das Repo auf GitHub erstellt wurde (leer) für ds lokale Repo
+git remote -v | etwas output, ob es geklappt hat
+it push --set-upstream origin master | wenn man ein neues Lokales Repo ins GitHub pushen will
+
 git add <file> | Fügt eine Datei git hinzu... sichert sie aber nicht im Repo nur im Local-Repo
 git commit -m "Nachricht hier eintragen" | Snapshot vom Projekt Lokal Repo
 git commit -a -m "Nachricht" | geht nur wenn die Datei schon im Repo existiert
@@ -10,6 +15,6 @@ git pull | Änderungen aus dem Repo von z.B. GitGub holen
 
 
 git status | zeigt an, ob man Änderungen "speichern" muss
-	um Files zu ignorieren ".gitignore" erstellen und Filename hinzufügen
+	- um Files zu ignorieren ".gitignore" erstellen und Filename hinzufügen
 git log | Infos über commit | "-p" mehr Output
 
