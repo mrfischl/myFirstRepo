@@ -22,3 +22,8 @@ git checkout -b newfeature | erstellt und wechselt in einen neuen Zweig "Branch"
 git status | zeigt an, ob man Änderungen "speichern" muss
 	- um Files zu ignorieren ".gitignore" erstellen und Filename hinzufügen
 git log | Infos über commit | "-p" mehr Output
+
+ssh-key Linux
+cd /.ssh
+ssh-keygen -t rsa -b 4096
+	- pub key auf GitHub hochladen
