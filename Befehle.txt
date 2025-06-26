@@ -17,6 +17,7 @@ git checkout -b newfeature | erstellt und wechselt in einen neuen Zweig "Branch"
 	git checkout <name> | wechselt in einen Zweig
 	git push --set-upstream origin newfeature
 	git branch | Zeigt an in welchem Zweig man ist
+	git merge newfeature
 
 git status | zeigt an, ob man Änderungen "speichern" muss
 	- um Files zu ignorieren ".gitignore" erstellen und Filename hinzufügen
