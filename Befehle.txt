@@ -14,6 +14,9 @@ git commit -a -m "Nachricht" | geht nur wenn die Datei schon im Repo existiert
 git push | Änderungen ins GitHub oder so pushen
 git pull | Änderungen aus dem Repo von z.B. GitGub holen
 
+git mv <oldname> <newname> | Datei umbenennen
+git mv <file> <another-directory> | Datei verschieben
+
 git checkout -b newfeature | erstellt und wechselt in einen neuen Zweig "Branch" -> nur Dateien vom neuen Zweig werden betrachtet
 	git checkout <name> | wechselt in einen Zweig
 	git push --set-upstream origin newfeature
