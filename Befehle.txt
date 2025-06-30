@@ -8,6 +8,7 @@ git remote -v | etwas output, ob es geklappt hat
 it push --set-upstream origin master | wenn man ein neues Lokales Repo ins GitHub pushen will
 
 git add <file> | Fügt eine Datei git hinzu... sichert sie aber nicht im Repo nur im Local-Repo
+git rm file1.txt | löscht eine Datei aus dem Repo
 git commit -m "Nachricht hier eintragen" | Snapshot vom Projekt Lokal Repo
 git commit -a -m "Nachricht" | geht nur wenn die Datei schon im Repo existiert
 git push | Änderungen ins GitHub oder so pushen
@@ -22,6 +23,8 @@ git checkout -b newfeature | erstellt und wechselt in einen neuen Zweig "Branch"
 git status | zeigt an, ob man Änderungen "speichern" muss
 	- um Files zu ignorieren ".gitignore" erstellen und Filename hinzufügen
 git log | Infos über commit | "-p" mehr Output
+git show :file1.txt | Staging Area -> nach commit leer
+git show HEAD:file1.txt | Git Repo
 
 ssh-key Linux
 cd /.ssh
