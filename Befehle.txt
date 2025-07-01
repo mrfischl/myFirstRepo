@@ -2,28 +2,20 @@ git config --global core.editor "/usr/bin/nano"
 git config --global user.name "Lukas"
 git config --global user.email "lukas.fischer@jklf.de"
 
-git clone <https://...>
-
 git init | erstellt ein neues lokales Repo
 git remote add origin <https://github.com/Repo...> | wenn das Repo auf GitHub erstellt wurde (leer) für ds lokale Repo
 git remote -v | etwas output, ob es geklappt hat
 it push --set-upstream origin master | wenn man ein neues Lokales Repo ins GitHub pushen will
 
 git add <file> | Fügt eine Datei git hinzu... sichert sie aber nicht im Repo nur im Local-Repo
+git rm file1.txt | löscht eine Datei aus dem Repo
 git commit -m "Nachricht hier eintragen" | Snapshot vom Projekt Lokal Repo
 git commit -a -m "Nachricht" | geht nur wenn die Datei schon im Repo existiert
 git push | Änderungen ins GitHub oder so pushen
 git pull | Änderungen aus dem Repo von z.B. GitGub holen
 
-git rm file1.txt | löscht eine Datei aus dem Repo
 git mv <oldname> <newname> | Datei umbenennen
 git mv <file> <another-directory> | Datei verschieben
-
-git reset <file> | Setzt die Git Datei zurück "git add" rückgängig
-git restore <file> | ersetzt die Datei gegen die Letzte im Repo "entfernt" die Änderung | git restore . -> Setzt zum letzten commit zurück
-git restore --staged <file> | setzt staged zurück vom "git add"
-git revert HEAD | Setzt das letzte Commit zurück
-git revert HEAD~1 | setzt nur die vorletzte Änderung zurück
 
 git checkout -b newfeature | erstellt und wechselt in einen neuen Zweig "Branch" -> nur Dateien vom neuen Zweig werden betrachtet
 	git checkout <name> | wechselt in einen Zweig
@@ -36,8 +28,6 @@ git status | zeigt an, ob man Änderungen "speichern" muss
 git log | Infos über commit | "-p" mehr Output
 git show :file1.txt | Staging Area -> nach commit leer
 git show HEAD:file1.txt | Git Repo
-git show HEAD~<zahl>:<file> | Zeigt die Änderung von dem jeweiligen Commit an (es fängt bei 0 an mit Zählen)
-git diff HEAD~ <file> | Zeigt Unterschied letztes Commit
 
 ssh-key Linux
 cd /.ssh
